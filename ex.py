@@ -6,15 +6,19 @@
 # print(sum)
 
 import math
+
+
 def isprime(x):
     if x < 2:
         return False
-    for i in range(2,int(math.sqrt(x))+1):
+    for i in range(2, int(math.sqrt(x)) + 1):
         if x % i == 0:
             return False
     return True
 
-n = int(input())
+
+#n = int(input())
+n = 10
 sum = 0
 for i in range(n):
     if isprime(i):
